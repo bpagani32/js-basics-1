@@ -15,8 +15,7 @@
 // (come back to this ~)
 
 //CODE HERE
-// let lovesCode = newBoolean(false)
-// boolean(x); 
+// let lovesCode = true
 //////////////////PROBLEM 4////////////////////
 /*
   Write an if-statement that checks if the faveNum variable is 
@@ -29,11 +28,11 @@
 
 
 // let greeting;
-//   if (faveNum = 13) {
-//     greeting = ("Lucky 13")
+//   if (faveNum === 13) {
+//     console.log("Lucky 13")
     
-//   } else (faveNum ==! 13)
-//     greeting = ("Not 13");{
+//   } else 
+//     console.log("Not 13");{
 //      }
 //////////////////PROBLEM 5////////////////////
 /*

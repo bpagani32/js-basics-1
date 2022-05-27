@@ -22,7 +22,7 @@
 
 
  
-//someNames now looks like this: ['Andrew', 'Jonathan']
+
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -32,11 +32,10 @@
 
 // const numbers = [1, 2, 3, 4, 5]
 
-//CODE HERE
+// // CODE HERE
 
-// var middleNums = numbers.splice(1, 3)
-//   console.log(middleNums)
-
+// middleNums = numbers.slice(1 ,4)
+//   console.log (middleNums)
 
 //////////////////PROBLEM 4//////////////////// I'll come back to this one
 
@@ -53,3 +52,20 @@
 */
 
 // CODE HERE
+
+// function bigOrSmall(arr) {
+//   const answers = []
+
+
+//   for (let i=0; i <arr.length; i++) {
+//     if (arr[i]>100) {
+//       answers.push("big")
+
+//     } else {
+//       answers.push('small')
+//     }
+//   }
+//   return answers
+// }
+
+// console.log( bigOrSmall([1,2000,4, -700000, 4 , 600]))
