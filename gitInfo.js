@@ -7,19 +7,19 @@
 /*
     Create a variable called 'gitDefinition'.
     It should be a string containing your best definition of what Git is.
-*/ 
-let gitDefinition = ('a screenshot of coders work from that session simalar to a video game save')
+*/
 
 //CODE HERE
+const gitDefinition = 'git is a version control software that helps enhance the development process by making collaboration, backing up code, and version control much smoother'
 
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
     It should be a string containing your best definition of what GitHub is.
 */
-// let gitHubDefinition = ('a database of all the saves from coders so they can pair program together to work on projects')
 
 //CODE HERE
+const gitHubDefinition = "website where you can push git repositories and share them"
 
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
@@ -37,19 +37,10 @@ let gitDefinition = ('a screenshot of coders work from that session simalar to a
 
 //CODE HERE
 const init = {
-    
-    printIntroduction: function() {
-      console.log(`Git Init: ${this.name}. To start open the terminal with the ^ up ${this.isHuman}`);
-    }
-  };
-  
-  const me = Object.create(init);
-  
-  me.name = 'is the terminal funciton to start your save on git'; 
-  me.isHuman = 'and type: git init'; 
-  me.printIntroduction();
- 
-  
+    description: "creates a git repository at your current directory/folder location",
+    code: "git init",
+}
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -57,13 +48,10 @@ const init = {
 */
 
 //CODE HERE
-// Git Clone:
-// Git Status:
-// Git Push:
-
-
-
-
+const clone = {
+    description: "copies an existing repository at the specified location",
+    code: "git clone <URL>",
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -72,36 +60,24 @@ const init = {
 */
 
 //CODE HERE
-
-// const status = {
-    
-//     printIntroduction: function() {
-//       console.log(`Git Status: ${this.name}. To use funciton type : ${this.isHuman}`);
-//     }
-//   };
-  
-//   const me = Object.create(init);
-  
-//   me.name = 'Is a way to check on your saves through the terminal'; 
-//   me.isHuman = 'git status in the terminal'; 
-//   me.printIntroduction();
-// //////////////////PROBLEM 6////////////////////
-// /*
-//     Create an object called 'add' with 'description' and 'code' properties 
-//     following the guidelines above to describe the add command.
-// */
-
-// //CODE HERE
-// printIntroduction: function(status) {
-//     console.log(`Git Add w: ${this.name}. To check on your saves to see if they are being tracked with git ${this.isHuman}`);
-//   }
+const status = {
+    description: "prints the status of the git repository you are currently in",
+    code: "git status",
+}
 
 
-// const me = Object.create(status);
+//////////////////PROBLEM 6////////////////////
+/*
+    Create an object called 'add' with 'description' and 'code' properties 
+    following the guidelines above to describe the add command.
+*/
 
-// me.name = 'is the terminal funciton to start your save on git'; 
-// me.isHuman = 'to use funciton type :git status in the terminal'; 
-// me.printIntroduction();
+//CODE HERE
+const add = {
+    description: "stages files to be committed",
+    code: "git add .",
+}
+
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -109,7 +85,10 @@ const init = {
 */
 
 //CODE HERE
-
+const commit = {
+    description: "saves a snapshot, called a commit, of all the staged changes",
+    code: "git commit -m \"<your message>\"",
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -118,3 +97,7 @@ const init = {
 */
 
 //CODE HERE
+const push = {
+    description: "sends repo changes to another repo location",
+    code: "git push",
+}
